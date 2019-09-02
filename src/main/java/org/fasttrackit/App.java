@@ -42,7 +42,6 @@ public class App
         System.out.println("Car2 name: " + car2.name);
         System.out.println("Car1 name: " + car.name);
 
-        car = car2;
 
     }
 }
