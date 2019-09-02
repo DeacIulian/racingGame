@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Vehicle {
     String name;
@@ -28,6 +29,18 @@ public class Vehicle {
         System.out.println("Used fuel: " + usedFuel);
 
         fuelLevel -= usedFuel;
+        /*
+        incremeting/decremeting by 1
+
+        fuelLevel = fuelLevel + 1;
+        fuelLevel += 1;
+        fuelLevel++;
+         */
+
+
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        System.out.println("Input from user: " + text);
 
         System.out.println("Remaining fuel: " + fuelLevel);
 
