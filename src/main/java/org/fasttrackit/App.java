@@ -30,6 +30,7 @@ public class App
         car2.name = "Golf";
 //        car.name = "Skoda";
 
+        car.accelerate(60,1);
 
         car2.fuelLevel = 65;
         car2.mileage = 9;
