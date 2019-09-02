@@ -11,22 +11,23 @@ public class App
     public static void main( String[] args )
     {
         //this is an one-line comment
-        Car car = new Car();
-        car.name = "Renault";
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 1600;
+        Car car = new Car(engine);
+        car.name = "Dacia";
         car.fuelLevel = 60;
         car.mileage = 8.5;
         car.doorCount = 5;
         car.maxSpeed = 180;
         car.fuelType = "Gasoline";
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-        engine.capacity = 1600;
 
-        car.engine = engine;
+        Engine engine2 = new Engine();
+        engine2.manufacturer = "Volkswagen";
+        engine2.capacity = 1900;
 
-
-        Car car2 = new Car();
+        Car car2 = new Car(engine2);
         car2.name = "Golf";
 //        car.name = "Skoda";
 
