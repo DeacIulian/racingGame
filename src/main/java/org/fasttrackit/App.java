@@ -38,6 +38,8 @@ public class App
 
         car.accelerate(60,1);
 
+        car.accelerate(90);
+
         car2.setFuelLevel(65);
         car2.setMileage(9);
         car2.doorCount = 3;
