@@ -14,13 +14,18 @@ public class App
         Engine engine = new Engine();
         engine.manufacturer = "Renault";
         engine.capacity = 1600;
+
+
         Car car = new Car(engine);
-        car.name = "Dacia";
-        car.fuelLevel = 60;
-        car.mileage = 8.5;
-        car.doorCount = 5;
-        car.maxSpeed = 180;
-        car.fuelType = "Gasoline";
+        car.setName("Dacia");
+        car.setFuelLevel(60);
+        car.setMileage(8.5);
+        car.setMaxSpeed(180);
+        car.setFuelType("Gasoline");
+
+        System.out.println(car.getName());
+        System.out.println(car.getTraveledDistance());
+        System.out.println(car.isRunning());
 
 
         Engine engine2 = new Engine();
@@ -28,21 +33,35 @@ public class App
         engine2.capacity = 1900;
 
         Car car2 = new Car(engine2);
-        car2.name = "Golf";
+        car2.setName("Golf");
 //        car.name = "Skoda";
 
         car.accelerate(60,1);
 
-        car2.fuelLevel = 65;
-        car2.mileage = 9;
+        car2.setFuelLevel(65);
+        car2.setMileage(9);
         car2.doorCount = 3;
-        car2.maxSpeed = 200;
-        car2.fuelType = "Diesel";
+        car2.setMaxSpeed(200);
+        car2.setFuelType("Diesel");
         //concatenation    concatenare
         //sout - System.out.println
         //ctrl+d - dubleaza linia
-        System.out.println("Car2 name: " + car2.name);
-        System.out.println("Car1 name: " + car.name);
+        System.out.println(car2.getName());
+        System.out.println(car2.getTraveledDistance());
+        System.out.println(car2.isRunning());
+
+
+//        System.out.println("Static variables example: ");
+
+//        car.totalCount = 1;
+
+//        System.out.println("Total count in car: " + car.totalCount);
+
+//        car2.totalCount= 2;
+
+//        System.out.println("Total count after setting car2: " + car.totalCount);
+//        System.out.println("Total count in car2: " + car2.totalCount);
+//        System.out.println("Total count in Class: " + Car.totalCount);
 
 
     }
