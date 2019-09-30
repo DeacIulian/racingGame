@@ -23,6 +23,9 @@ public class App
         car.setMaxSpeed(180);
         car.setFuelType("Gasoline");
 
+
+        System.out.println("Car object: " + car.toString());
+
         System.out.println(car.getName());
         System.out.println(car.getTraveledDistance());
         System.out.println(car.isRunning());
@@ -52,6 +55,18 @@ public class App
         System.out.println(car2.getTraveledDistance());
         System.out.println(car2.isRunning());
 
+        HybridCar car3 = new HybridCar();
+        car3.setName("Hyundai");
+        car3.setFuelLevel(50);
+        car3.setMileage(8);
+        car3.setMaxSpeed(260);
+        car3.setFuelType("Gasoline/Electric");
+
+        car3.accelerate(80);
+
+        System.out.println("Fuel level: " + car3.getFuelLevel());
+        System.out.println("Traveled distance " + car3.getTraveledDistance());
+
 
 //        System.out.println("Static variables example: ");
 
@@ -67,4 +82,5 @@ public class App
 
 
     }
+
 }

@@ -11,6 +11,6 @@ public class AutoVehicle extends Vehicle {
 
     //constructor overloading
     public AutoVehicle(){
-        this.engine = new.Engine();
+        this.engine = new Engine();
     }
 }
