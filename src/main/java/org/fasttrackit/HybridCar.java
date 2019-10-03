@@ -14,4 +14,9 @@ public class HybridCar extends Vehicle {
         System.out.println("CHEATER!!!!");
         return distance;
     }
+//    Co-variant return type
+    @Override
+    protected HybridCar clone() throws CloneNotSupportedException {
+        return new HybridCar();
+    }
 }
