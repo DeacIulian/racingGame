@@ -8,8 +8,16 @@ import java.util.concurrent.Callable;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
+        Game game = new Game();
+        game.start();
+
+
+
+
+
+
+
         //this is an one-line comment
 //       Engine engine = new Engine();
 //       engine.manufacturer = "Renault";
@@ -55,20 +63,20 @@ public class App
 //       System.out.println(car2.getTraveledDistance());
 //       System.out.println(car2.isRunning());
 
-        Vehicle car3 = new HybridCar();
-        car3.setName("Cheater");
-        car3.setFuelLevel(60);
-//      Method implementation from object's class not from variable's class
-
-        car3.accelerate(80);
-
-        System.out.println("Fuel level: " + car3.getFuelLevel());
-        System.out.println("Traveled distance " + car3.getTraveledDistance());
-
-
-        //variable type decide what methods can be invoked
-        //type casting
-        ((HybridCar) car3 ).fly();
+//        Vehicle car3 = new HybridCar();
+//        car3.setName("Cheater");
+//        car3.setFuelLevel(60);
+////      Method implementation from object's class not from variable's class
+//
+//        car3.accelerate(80);
+//
+//        System.out.println("Fuel level: " + car3.getFuelLevel());
+//        System.out.println("Traveled distance " + car3.getTraveledDistance());
+//
+//
+//        //variable type decide what methods can be invoked
+//        //type casting
+//        ((HybridCar) car3 ).fly();
 
 
 //        System.out.println("Static variables example: ");
