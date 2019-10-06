@@ -19,4 +19,8 @@ public class HybridCar extends Vehicle {
     protected HybridCar clone() throws CloneNotSupportedException {
         return new HybridCar();
     }
+
+    public void fly(){
+        System.out.println("Yeeey! Flying");
+    }
 }

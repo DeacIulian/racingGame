@@ -66,6 +66,11 @@ public class App
         System.out.println("Traveled distance " + car3.getTraveledDistance());
 
 
+        //variable type decide what methods can be invoked
+        //type casting
+        ((HybridCar) car3 ).fly();
+
+
 //        System.out.println("Static variables example: ");
 
 //        car.totalCount = 1;
