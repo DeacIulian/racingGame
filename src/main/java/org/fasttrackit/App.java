@@ -8,7 +8,7 @@ import java.util.concurrent.Callable;
  */
 public class App 
 {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
         Game game = new Game();
         game.start();
 
