@@ -97,23 +97,4 @@ public class App
 }
 
 
- //   boolean winnerNotKnown = true;
- //   int competitorsWithoutFuel = 0;
 
- //   while (winnerNotKnown  && competitorsWithoutFuel < competitors.size()){
-
- //       for(Vehicle vehicle : competitors){
- //           double speed = getAccelerationSpeedFromUser();
- //           vehicle.accelerate(speed, 1);
-
- //           if(selectedTrack.getLenght() <= vehicle.getTraveledDistance()){
- //               winnerNotKnown = false;
- //               System.out.println("The winer is " + vehicle.getName());
- //               break;
- //           }
-
- //           if(vehicle.getFuelLevel() <= 0){
- //               competitorsWithoutFuel++;
- //           }
- //       }
- //   }
